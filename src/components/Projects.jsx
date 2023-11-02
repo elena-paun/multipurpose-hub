@@ -55,10 +55,11 @@ export const Projects = () => {
     },
   ];
   return (
-    <motion.div
+    <div
       id='projects'
       className='relative md:left-6 md:w-[80%] pt-20 gap-y-10 grid  col-start-1 md:col-start-2 col-span-2 '
-      variants={textVariant()}>
+      //   variants={textVariant()}
+    >
       <div className='group/list'>
         {/* <div className='h-screen grid grid-cols-8 grid-rows-5 flex flex-col lg:flex-row gap-6'> */}
         {projects.map((proj) => (
@@ -72,7 +73,7 @@ export const Projects = () => {
       </div>
 
       {/* </div> */}
-    </motion.div>
+    </div>
   );
 };
 export default Projects;

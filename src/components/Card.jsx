@@ -6,9 +6,7 @@ import { SectionWrapper } from '../hoc';
 
 const Card = ({ title, description, tech }) => {
   return (
-    <motion.div
-      variants={textVariant()}
-      className='w-[40rem] group md:px-8 py-8 relative grid pb-1 transition-all sm:gap-8 md:gap-4 md:hover:!opacity-100 md:group-hover/list:opacity-50'>
+    <div className='w-[40rem] group md:px-8 py-8 relative grid pb-1 transition-all sm:gap-8 md:gap-4 md:hover:!opacity-100 md:group-hover/list:opacity-50'>
       {/* <div className='group flex justify-center items-center col-start-4 col-span-3 row-start-3 row-span-3'> */}
       <div className='relative block -inset-x-4 -inset-y-4 z-0  rounded-md transition motion-reduce:transition-none md:-inset-x-6 md:block md:group-hover:bg-[rgb(51,48,65)]/50 md:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] md:group-hover:drop-shadow-lg'>
         <div className='px-6 py-4'>
@@ -33,7 +31,7 @@ const Card = ({ title, description, tech }) => {
               </span> */}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
