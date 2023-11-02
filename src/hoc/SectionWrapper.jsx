@@ -7,12 +7,14 @@ const StarWrapper = (Component, className) =>
   function HOC() {
     return (
       <>
-        <div className={`h-screen ${className} fixed w-1/2`} />
+        <div
+          className={`h-screen fixed ${className}  hidden md:block translate-x-0 md:translate-x-1/2  w-80 `}
+        />
         <motion.section
           variants={staggerContainer()}
           initial='hidden'
           whileInView='show'
-          className={`z-0 h-screen overflow-hidden`}>
+          className={` h-screen overflow-hidden`}>
           {/* <span className='hash-span' id={idName}>
             &nbsp;
           </span> */}

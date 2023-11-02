@@ -28,21 +28,21 @@ import {
 export const navLinks = [
   {
     id: '#about',
-    title: 'ABOUT',
+    title: 'About',
   },
-  {
-    id: '#resume',
-    title: 'RESUME',
-  },
-  {
-    id: '#projects',
-    title: 'PROJECTS',
-  },
-  {
-    id: '#contact',
-    title: 'CONTACT',
-  },
-  { id: '#artwork', title: 'ARTWORK' },
+  // {
+  //   id: '#resume',
+  //   title: 'RESUME',
+  // },
+  // {
+  //   id: '#projects',
+  //   title: 'PROJECTS',
+  // },
+  // {
+  //   id: '#contact',
+  //   title: 'CONTACT',
+  // },
+  { id: '#projects', title: 'Portfolio' },
 ];
 
 const services = [

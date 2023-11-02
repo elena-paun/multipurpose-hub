@@ -84,7 +84,7 @@ const Navbar = () => {
         <div className='right-0 w-[1px] vertical-lr block bg-stone-700 h-screen absolute' />
         <div className='right-0 w-[5px] vertical-lr block bg-orange h-[10rem] absolute' />
       </nav> */}
-      <nav className='hidden bg-transparent z-[1] col-start-1 col-span-1 float-left h-screen justify-end left-0 top-0 fixed md:flex flex-col gap-0'>
+      <nav className='hidden bg-transparent right-0 col-start-1 col-span-1 float-left h-screen justify-end left-0 top-0 fixed md:flex flex-col gap-0'>
         {/* <nav className='float-right border-b-2 border-b-black bg-transparent w-full hidden md:flex rotate-90 -right-[23rem] justify-end flex-row right-0 fixed gap-10 col-span-3'> */}
         <Link
           to='/'
@@ -107,20 +107,20 @@ const Navbar = () => {
           /> */}
         </Link>
 
-        <div className='gap-20 flex flex-col m-8'>
+        <div className='gap-20 left-1/2 top-0 m-8 absolute flex flex-row'>
           {navLinks.map((nav) => (
-            <Link
+            <a
               key={nav.id}
-              // href={`${nav.id}`}
-              to='gallery'
+              href={`${nav.id} `}
+              // to={`${nav.id} `}
               // onClick={(e) => navigate('gallery')}
-              className={`font-mono tracking-tight font-bolder block vertical-lr rotate-180 text-cormorant text-beige bg-transparent dark:text-dark`}>
+              className={`font-mono tracking-tight block text-caps text-beige bg-transparent dark:text-dark`}>
               {nav.title}
-            </Link>
+            </a>
           ))}
         </div>
-        <div className='right-0 w-[1px] vertical-lr block bg-stone-700 h-screen absolute' />
-        <div className='right-0 w-[5px] vertical-lr block bg-orange h-[10rem] absolute' />
+        <div className='top-0 w-[1px]  block bg-stone-700 h-screen absolute' />
+        <div className='top-0 w-[5px]  block bg-orange h-[10rem] absolute' />
       </nav>
       <nav className='flex md:hidden bg-grey'>
         <div className='fixed  right-0 z-20 flex-1 justify-end items-center col-end-7 col-span-2 p-7 bg-transparent'>

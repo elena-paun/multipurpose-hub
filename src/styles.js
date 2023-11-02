@@ -8,10 +8,9 @@ const styles = {
   heroSubText:
     'text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]',
 
-  sectionHeadText:
-    'dark:text-dark text-light align-center justify-center flex text-4xl',
+  sectionHeadText: 'text-light align-center justify-center flex text-4xl',
   sectionSubText:
-    'text-sm text-[14px] text-tertiary uppercase font-semibold tracking-wider',
+    'text-light text-sm text-[14px] text-tertiary uppercase font-semibold tracking-wider',
   fontColor: {
     dark: 'white',
     light: '#5d73a3',

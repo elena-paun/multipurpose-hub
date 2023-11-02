@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router-dom';
 import { Artwork } from './components/Artwork';
 import Root from './Root';
+import About from './About';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
         element: <Artwork />,
         // loader: teamLoader,
       },
+      // {
+      //   path: 'about',
+      //   element: <About />,
+      //   // loader: teamLoader,
+      // },
     ],
   },
 ]);

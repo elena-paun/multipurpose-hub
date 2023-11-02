@@ -13,6 +13,7 @@ module.exports = {
         hero: "url('/assets/hero.png')",
       },
       fontFamily: {
+        abril: 'Abril Fatface',
         reenie: 'Reenie Beanie',
         cedarville: 'Cedarville Cursive',
         major: 'Major Mono Display',

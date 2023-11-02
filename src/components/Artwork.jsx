@@ -78,32 +78,26 @@ export const Artwork = () => {
       variants={slideIn('left', 'tween', 0.2, 1)}
       className='section-wrapper-artwork'>
       <div className='my-20' onClick={() => navigate('/')}>
-        <img
+        {/* <img
           src='src/assets/circle_scribble.png'
           width='10%'
           alt='img'
           className='relative left-1/2 transform -translate-x-1/2'
-        />
-        {/* <img
-          src='src/assets/scribble_2.png'
-          width='10%'
-          alt='img'
-          className='w-96 relative left-1/2 transform -translate-x-1/2'
         /> */}
       </div>
-      <PhotoAlbum
-        photos={photos(images)}
-        layout='columns'
-        targetRowHeight={100}
-        spacing={5}
-        columns={(containerWidth) => {
-          if (containerWidth < 400) return 1;
-          if (containerWidth < 800) return 2;
-          return 3;
-        }}
-      />
+      <div className='flex flex-wrap'>
+        {images.map(({ url }, index) => (
+          <div key={index} className='w-1/2 p-2'>
+            <img
+              src={url}
+              alt={`gallery-${index}`}
+              className='w-full grayscale hover:grayscale-0'
+            />
+          </div>
+        ))}
+      </div>
     </motion.div>
   );
 };
 
-export default SectionWrapper(Artwork);
+export default SectionWrapper(Artwork, 'section-wrapper-artwork');

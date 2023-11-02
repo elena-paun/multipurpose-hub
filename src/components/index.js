@@ -13,13 +13,17 @@ import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
-import Gallery from './Gallery';
+import Gallery from '../screens/Gallery';
 import CanvasLoader from './Loader';
 import ImageGallery from './ImageGallery';
 import Container from './Container';
 import Typewriter from './Typewriter';
+import Card from './Card';
+import Projects from './Projects';
 export {
   Hero,
+  Card,
+  Projects,
   Navbar,
   About,
   Tech,

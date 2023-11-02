@@ -12,7 +12,7 @@ import About from './About';
 import Resume from './components/Resume';
 import SquareGrid from './components/SquareGrid';
 import AnimatedCursor from 'react-animated-cursor';
-import { Contact, Navbar, Artwork, ImageGallery } from './components';
+import { Contact, Navbar, Artwork, ImageGallery, Projects } from './components';
 import PhotoAlbum from 'react-photo-album';
 import photos from './components/photos';
 
@@ -61,10 +61,25 @@ const App = () => {
   // const handleStepClick = (stepIndex) => {
   //   setActive(stepIndex);
   // };
+  useEffect(() => {
+    document.addEventListener('mousemove', function (e) {
+      const cursorEffect = document.getElementById(
+        'cursor-effect'
+      ) as HTMLElement;
+      const x = e.clientX;
+      const y = e.clientY;
+      cursorEffect.style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+    });
+  }, []);
   return (
-    <>
-      <Navbar />
+    <div className='grid grid-cols-2 grid-flow-col grid-rows-2'>
+      <div
+        id='cursor-effect'
+        className='pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute'
+      />
+      {/* <Navbar /> */}
       <Container />
+
       {/* <Artwork /> */}
       {/* <Contact /> */}
 
@@ -82,7 +97,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div> */}
-    </>
+    </div>
   );
 };
 // const container = document.getElementById('root');
